@@ -6,15 +6,31 @@ using System.Threading.Tasks;
 
 namespace CalculaPrimosCore
 {
-    class Program
+     class Program
     {
         static void Main(string[] args)
         {
+
+
             long _ultimo = 200000;
+            var programa = new Program();
+
+            List<Double> lista = new List<Double>();
+            var rnd = new Random();
+            for (long i = 0; i < 500000000; i++)
+            {
+                lista.Add(rnd.NextDouble());
+            }
+            Console.WriteLine("Diferenças Formas de soma do LINQ, entre Normal e AsParallel.");
+            programa.Soma(lista);
+            Console.ReadLine();
+            programa.SomaParallel(lista);
+            Console.ReadLine();
+
             Console.WriteLine("Diferenças Formas de Escrever os Threads para Calcular Números Primos!");
             Console.WriteLine("Pressione enter para continuar...");
             Console.ReadLine();
-            var programa = new Program();
+        
             programa.ZeraTotalPrimos();
             programa.CronometroParallel(_ultimo);
             Console.WriteLine("Total de primos encontrados: " + programa.RetornaTotalPrimos() + 2);
@@ -52,6 +68,43 @@ namespace CalculaPrimosCore
         {
             totalPrimos = 0;
         }
+
+
+        public void Soma(List<Double> lista)
+        {
+
+            Console.WriteLine("Soma - Normal");
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            var soma = lista.Sum();
+            Console.WriteLine("Valor Soma " + soma);
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                ts.Hours, ts.Minutes, ts.Seconds,
+                ts.Milliseconds / 10);
+            Console.WriteLine("RunTime " + elapsedTime);
+
+        }
+
+
+        public void SomaParallel(List<Double> lista)
+        {
+
+            Console.WriteLine("Soma - Parallel");
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            var soma = lista.AsParallel().Sum();
+            Console.WriteLine("Valor Soma " + soma);
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                ts.Hours, ts.Minutes, ts.Seconds,
+                ts.Milliseconds / 10);
+            Console.WriteLine("RunTime " + elapsedTime);
+
+        }
+
 
         public void CronometroParallel(long _ultimo)
         {
