@@ -1,0 +1,11 @@
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\bin\Debug\netcoreapp2.2\CalculaPrimosCore.deps.json
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\bin\Debug\netcoreapp2.2\CalculaPrimosCore.runtimeconfig.json
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\bin\Debug\netcoreapp2.2\CalculaPrimosCore.runtimeconfig.dev.json
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\bin\Debug\netcoreapp2.2\CalculaPrimosCore.dll
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\bin\Debug\netcoreapp2.2\CalculaPrimosCore.pdb
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\obj\Debug\netcoreapp2.2\CalculaPrimosCore.csprojAssemblyReference.cache
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\obj\Debug\netcoreapp2.2\CalculaPrimosCore.csproj.CoreCompileInputs.cache
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\obj\Debug\netcoreapp2.2\CalculaPrimosCore.AssemblyInfoInputs.cache
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\obj\Debug\netcoreapp2.2\CalculaPrimosCore.AssemblyInfo.cs
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\obj\Debug\netcoreapp2.2\CalculaPrimosCore.dll
+C:\Users\diego\source\repos\CalculaPrimosCore\CalculaPrimosCore\obj\Debug\netcoreapp2.2\CalculaPrimosCore.pdb
